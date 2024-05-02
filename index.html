@@ -2,36 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Studio Site</title>
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0">
+    <title>Portfolio - Inspired by Dr. Strangelove</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Studio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Inspired by the aesthetic of Dr. Strangelove</p>
     </header>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>This is a brief section about the studio.</p>
+
+    <section class="portfolio" id="portfolio">
+        <h2>My Work</h2>
+        <div>
+            <img src="project1.jpg" alt="Project 1">
+            <p>Project 1 Description</p>
+        </div>
+        <div>
+            <img src="project2.jpg" alt="Project 2">
+            <p>Project 2 Description</p>
+        </div>
+        <div>
+            <img src="project3.jpg" alt="Project 3">
+            <p>Project 3 Description</p>
+        </div>
+        <!-- More projects can be added here -->
     </section>
-    <section id="services">
-        <h2>Services</h2>
-        <p>Details about the services provided.</p>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm a designer and developer with a passion for the 
+unique aesthetics of the Cold War era, particularly the cinematic 
+style of Dr. Strangelove. Here you can see my projects that reflect 
+my interests and skills.</p>
     </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>How to get in touch.</p>
-    </section>
+
     <footer>
-        <p>Copyright © 2024 My Studio</p>
+        <p>Contact me at <a 
+href="mailto:email@example.com">email@example.com</a></p>
+        <p>Follow me on <a href="social-media-link">Social 
+Media</a></p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>
