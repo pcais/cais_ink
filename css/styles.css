@@ -6,38 +6,41 @@
 }
 
 body {
-    font-family: 'Courier New', monospace;
-    color: #333;
-    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Typography */
-h1, h2, h3, h4 {
-    font-family: 'Arial', sans-serif;
-    text-transform: uppercase;
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.bento-box {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fafafa;
 }
 
 /* Navigation Bar */
 nav {
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    text-align: right;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    border-bottom: none;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-/* Banner */
-header {
-    background: #000;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
+/* Typography */
+h1, h2, h3 {
+    text-transform: none;
+    color: #333;
 }
 
 /* Portfolio Grid */
@@ -45,52 +48,27 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding: 20px;
 }
 
 .portfolio img {
     width: 100%;
     height: auto;
     display: block;
-    filter: grayscale(100%);
 }
 
 /* About Section */
 .about {
-    padding: 20px;
-    background-color: #f8f8f8;
-    color: #000;
     font-size: 18px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #222;
-    color: #fff;
+    background-color: transparent;
+    color: #333;
 }
 
-footer a {
-    color: #f00;
-    text-decoration: none;
-}
-
-/* Button Styles */
-button, .button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-button:hover, .button:hover {
-    background-color: #555;
-}
-
-/* Responsive Adjustments */
+/* Media Queries */
 @media (max-width: 768px) {
     .portfolio {
         grid-template-columns: 1fr;
