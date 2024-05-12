@@ -7,12 +7,12 @@ body, html {
   }
   
   .clock {
-    width: 300px;
-    height: 300px;
-    border: 10px solid #ff9933;
+    width: 350px; /* Adjusted for a larger view */
+    height: 350px; /* Adjusted for a larger view */
+    border: 8px solid #ff9933; /* Subtle border to match the clock's aesthetic */
     border-radius: 50%;
     position: relative;
-    padding: 20px;
+    background: navy; /* Dark blue face as in the image */
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
   }
   
@@ -20,8 +20,6 @@ body, html {
     position: relative;
     width: 100%;
     height: 100%;
-    background: navy;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,16 +28,14 @@ body, html {
   .hand {
     position: absolute;
     width: 50%;
-    height: 6px;
-    background: white;
+    height: 4px; /* Slimmer hands */
+    background: rgba(178, 167, 167, 0.713);
     top: 50%;
     transform-origin: 100%;
-    transform: rotate(90deg);
-    transition: all 0.05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    transition: all 0.5s cubic-bezier(0.4, 2.3, 0.3, 1);
   }
   
   .hand.hour-hand { width: 30%; }
   .hand.minute-hand { width: 40%; }
-  .hand.second-hand { width: 45%; background-color: red; }
+  .hand.second-hand { width: 45%; background-color: red; height: 2px; } /* Thinner and red second hand */
   
